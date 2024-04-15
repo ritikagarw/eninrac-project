@@ -13,16 +13,18 @@
     <!-- ========== Header ========== -->
 
     <header>
-      <img src="./assets/Logo.svg" alt="Logo" />
+      <img src="./assets/Logo.svg" alt="Logo" aria-label="Jadoo Logo" />
       <nav>
         <ul>
-          <li>Destinations</li>
-          <li>Hotels</li>
-          <li>Flights</li>
-          <li>Bookings</li>
-          <li>Login</li>
-          <li>Sign up</li>
-          <li>EN <img src="./assets/Dropdown.svg" alt="dropdown" /></li>
+          <li tabindex="0" aria-label="Destinations">Destinations</li>
+          <li tabindex="0" aria-label="Hotels">Hotels</li>
+          <li tabindex="0" aria-label="Flights">Flights</li>
+          <li tabindex="0" aria-label="Bookings">Bookings</li>
+          <li tabindex="0" aria-label="Login">Login</li>
+          <li tabindex="0" aria-label="Sign up">Sign up</li>
+          <li tabindex="0" aria-label="Language">
+            EN <img src="./assets/Dropdown.svg" alt="dropdown" />
+          </li>
         </ul>
       </nav>
     </header>
@@ -31,7 +33,9 @@
 
     <main>
       <aside>
-        <h3>BEST DESTINATIONS AROUND THE WORLD</h3>
+        <h3 tabindex="0" aria-label="Best destinations around the world">
+          BEST DESTINATIONS AROUND THE WORLD
+        </h3>
         <h1>
           Travel,
           <div id="underlinedText">
@@ -51,8 +55,8 @@
           they west hard for the.
         </p>
         <div id="findandplay">
-          <button id="findOut">Find out more</button>
-          <div id="play">
+          <button aria-label="Find out more">Find out more</button>
+          <div id="play" tabindex="0" aria-label="Play Demo">
             <img src="./assets/Playbutton.svg" alt="play" />
             <p>Play Demo</p>
           </div>
@@ -66,8 +70,8 @@
     <section id="category">
       <img src="./assets/categoryDecor.svg" alt="stars" id="categoryDecor" />
       <div id="categoryHead">
-        <h3>Category</h3>
-        <h1>We Offer Best</h1>
+        <h3 tabindex="0" aria-label="Category">Category</h3>
+        <h1>We Offer Best Services</h1>
       </div>
       <div id="offers">
         <article>
@@ -123,7 +127,7 @@
 
     <section id="destinations">
       <div id="destinationsHead">
-        <h3>Top Selling</h3>
+        <h3 tabindex="0" aria-label="Top Selling">Top Selling</h3>
         <h1>Top Destination</h1>
       </div>
       <div id="destinationPlaces">
@@ -175,7 +179,9 @@
     <section id="stepsForTrip">
       <div>
         <div>
-          <h3>Easy and Fast</h3>
+          <h3 tabindex="0" aria-label="Easy and Fast bookings">
+            Easy and Fast
+          </h3>
           <h1>
             Book your next trip <br />
             in 3 easy steps
@@ -212,7 +218,7 @@
 
     <section id="testimonials">
       <div>
-        <h3>Testimonials</h3>
+        <h3 tabindex="0" aria-label="Testimonials">Testimonials</h3>
         <h1>
           What people say <br />
           about us.
@@ -227,7 +233,7 @@
 
     <!-- ========== Brands ========== -->
 
-    <section id="brands">
+    <section id="brands" aria-label="Brands">
       <img src="./assets/company1.png" alt="company1" />
       <img src="./assets/company2.png" alt="company2" />
       <img src="./assets/company3.png" alt="company3" />
@@ -237,7 +243,7 @@
 
     <!-- ========== Subscribe ========== -->
 
-    <section id="subscribe">
+    <section id="subscribe" aria-label="Subscribe to us">
       <img src="./assets/subscribeBack.svg" alt="Background" />
       <img src="./assets/subscribeArrow.svg" alt="subscribe arrow" />
       <div id="subscribeContent">
@@ -259,7 +265,7 @@
     <footer>
       <section>
         <div>
-          <h2>Jadoo.</h2>
+          <h2 tabindex="0">Jadoo.</h2>
           <p>
             Book your trip in minute, get full <br />Control for much longer.
           </p>
@@ -267,24 +273,26 @@
         <div id="footerMain">
           <div>
             <h3>Company</h3>
-            <h5>About</h5>
-            <h5>Careers</h5>
-            <h5>Mobile</h5>
+            <h5 tabindex="0">About</h5>
+            <h5 tabindex="0">Careers</h5>
+            <h5 tabindex="0">Mobile</h5>
           </div>
           <div>
             <h3>Contact</h3>
-            <h5>Help/FAQ</h5>
-            <h5>Press</h5>
-            <h5>Affilates</h5>
+            <h5 tabindex="0">Help/FAQ</h5>
+            <h5 tabindex="0">Press</h5>
+            <h5 tabindex="0">Affilates</h5>
           </div>
           <div>
             <h3>More</h3>
-            <h5>Airlinefees</h5>
-            <h5>Airline</h5>
-            <h5>Low fare tips</h5>
+            <h5 tabindex="0">Airlinefees</h5>
+            <h5 tabindex="0">Airline</h5>
+            <h5 tabindex="0">Low fare tips</h5>
           </div>
         </div>
-        <div><img src="./assets/contact-us.svg" alt="contact us" /></div>
+        <div>
+          <img src="./assets/contact-us.svg" alt="contact us" tabindex="0" />
+        </div>
       </section>
       <p>All rights reserved@jadoo.co</p>
     </footer>

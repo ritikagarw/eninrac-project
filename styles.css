@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --lightPara: #5e6282;
+  --heading: #14183e;
+  --heading2: #181e4b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,9 +33,12 @@ header ul {
 header ul li {
   list-style: none;
   padding: 10px 30px;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  color: #212832;
 }
 
-header ul li:nth-child(6) {
+header ul li:hover {
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -85,17 +96,21 @@ main h3 {
   font-size: 20px;
   color: #df6951;
   margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 main h1 {
   font-size: 84px;
-  color: #181e4b;
-  font-family: Helvetica;
+  color: var(--heading2);
+  font-family: "Volkhov", serif;
 }
 
 main aside p {
   margin: 30px 0;
   line-height: 2;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: var(--lightPara);
 }
 
 #findandplay {
@@ -112,13 +127,19 @@ main #findOut {
   color: white;
 }
 
-#findOut {
+#findandplay > button {
   width: 170px;
   height: 60px;
   background-color: #f1a501;
   border-radius: 10px;
   border: none;
   color: white;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#findandplay > button:hover {
+  border: 2px solid black;
 }
 
 #play {
@@ -130,6 +151,12 @@ main #findOut {
   height: 52px;
   width: 52px;
   margin: 0 21px 0 44px;
+}
+
+#play p {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  color: #686d77;
 }
 
 /* ++++++++++++++ Category ++++++++++++ */
@@ -154,11 +181,15 @@ main #findOut {
 
 #categoryHead h3 {
   font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: var(--lightPara);
 }
 
 #categoryHead h1 {
   font-size: 50px;
   margin: 20px 0;
+  color: var(--heading);
+  font-family: "Volkhov", serif;
 }
 
 #offers {
@@ -174,7 +205,6 @@ main #findOut {
   width: 267px;
   padding: 50px;
   border-radius: 36px;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,6 +256,14 @@ main #findOut {
 
 #offers h3 {
   margin: 20px 0;
+  color: #1e1d4c;
+  font-family: "Open Sans", sans-serif;
+}
+
+#offers p {
+  font-size: 16px;
+  color: var(--lightPara);
+  font-family: "Poppins", sans-serif;
 }
 
 /*++++++++++++++++ Top Destination +++++++++++++++ */
@@ -243,11 +281,15 @@ main #findOut {
 
 #destinationsHead h3 {
   font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: var(--lightPara);
 }
 
 #destinationsHead h1 {
   font-size: 50px;
   margin: 20px 0;
+  color: var(--heading);
+  font-family: "Volkhov", serif;
 }
 
 #destinationPlaces {
@@ -273,7 +315,6 @@ main #findOut {
   width: 305px;
   height: 132px;
   border-radius: 0 0 24px 24px;
-  /* border: 1px solid black; */
   bottom: 10px;
   left: 5px;
   box-shadow: 0 16px 26px rgba(0, 0, 0, 0.3);
@@ -283,11 +324,21 @@ main #findOut {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: var(--lightPara);
+  line-height: 35px;
 }
 
 .destinationInfo div:last-child {
   display: flex;
   align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: var(--lightPara);
+  line-height: 35px;
 }
 
 .destinationInfo div:last-child img {
@@ -317,11 +368,15 @@ main #findOut {
 
 #stepsForTrip h3 {
   font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: var(--lightPara);
 }
 
 #stepsForTrip h1 {
   font-size: 50px;
   margin-top: 10px;
+  color: var(--heading);
+  font-family: "Volkhov", serif;
 }
 
 #steps {
@@ -340,6 +395,12 @@ main #findOut {
 
 .stepsText h4 {
   margin-bottom: 5px;
+}
+
+.stepsText h4,
+p {
+  color: var(--lightPara);
+  font-family: "Poppins", sans-serif;
 }
 
 #stepsForTrip figure img {
@@ -372,11 +433,15 @@ main #findOut {
 
 #testimonials h3 {
   font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: var(--lightPara);
 }
 
 #testimonials h1 {
   font-size: 50px;
   margin-top: 10px;
+  color: var(--heading);
+  font-family: "Volkhov", serif;
 }
 
 /*+++++++++++ Brands ++++++++++++*/
@@ -427,6 +492,8 @@ main #findOut {
   font-size: 33px;
   line-height: 50px;
   margin-bottom: 100px;
+  color: var(--lightPara);
+  font-family: "Poppins", sans-serif;
 }
 
 #subscribeContent > div {
@@ -466,6 +533,11 @@ main #findOut {
   );
   color: white;
   border: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+#subscribeContent button:hover {
+  border: 2px solid black;
 }
 
 #subscribe img:last-child {
@@ -483,8 +555,10 @@ footer {
 
 footer > p {
   text-align: center;
-  color: #5E6282;
+  color: var(--lightPara);
   font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 footer section {
@@ -495,15 +569,20 @@ footer section {
 
 footer section h2 {
   font-size: 44px;
-  color: #181e4b;
+  color: var(--heading2);
   margin-bottom: 10px;
   margin-top: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 footer section p {
   font-size: 13px;
-  color: #5e6282;
+  color: var(--lightPara);
+  font-weight: 500;
   line-height: 16px;
+  font-family: "Poppins", sans-serif;
+  line-height: 20px;
 }
 
 #footerMain {
@@ -517,10 +596,14 @@ footer section p {
 #footerMain h3 {
   font-size: 21px;
   line-height: 80px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
 }
 
 #footerMain h5 {
-  color: #5e6282;
+  color: var(--lightPara);
   font-size: 18px;
   line-height: 40px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
